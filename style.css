@@ -1,0 +1,95 @@
+body{
+    font-family: 'Nunito', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    gap:0;
+    
+}
+
+.img{
+    display: flex;
+    width: 40%;
+    height: 96%;
+    margin: 1% 1% 1% 1%;
+    background: url(./assets/logan-armstrong-hVhfqhDYciU-unsplash.jpg) no-repeat center;
+    background-size: cover;
+    align-items: flex-end;
+    justify-content: center;
+    
+    border-radius: 5px;
+
+    
+}
+
+.img-descrition{
+    margin-top: auto;
+    margin-bottom: 20px;
+    font-size: 100%;
+    color: white;
+    font-weight: 900;
+    text-shadow: -1px -1px 0 #000, 1px, -1px 0 #000, -1px, 1px #000, 1px 1px 0 #000;
+    
+}
+
+.img-info{
+    color: white;
+    font-weight: bold;
+    text-decoration: inherit;
+}
+a{
+    color: white;
+    text-decoration: inherit;
+}
+/* right part*/
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 96%;
+    margin: 1% 1% 1% 1%;
+    background-color: lightgrey;
+    border-radius: 10px;
+}
+
+
+
+
+
+.text{
+    margin-left: 20px;
+    color: black;
+}
+
+.signUpSection{
+    
+    background-color: white;
+    width: 100%;
+    height: 40%;
+    
+    
+}
+
+.signUpForm{
+
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.form-inputs{
+    
+    background-color: white;
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.left-data{
+    margin-left: 25px;
+}
+
+

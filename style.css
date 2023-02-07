@@ -7,20 +7,20 @@ body{
     flex-direction: row;
     background-color: black;
     gap:0;
+   
+    
     
 }
 
 .img{
     display: flex;
     width: 40%;
-    height: 96%;
-    margin: 1% 1% 1% 1%;
+    height: 100%;
     background: url(./assets/logan-armstrong-hVhfqhDYciU-unsplash.jpg) no-repeat center;
     background-size: cover;
     align-items: flex-end;
     justify-content: center;
-    
-    border-radius: 5px;
+  
 
     
 }
@@ -49,21 +49,26 @@ a{
     display: flex;
     flex-direction: column;
     width: 60%;
-    height: 96%;
-    margin: 1% 1% 1% 1%;
+    height: 100%;
     background-color: lightgrey;
-    border-radius: 10px;
     background-size: cover;
+    
    
 }
 
+.form-info{
+    height: 20%;
+    width: 100%;
+    margin-top: 40px;
 
-
+}
 
 
 .text{
     margin-left: 40px;
+    margin-right: 20px;
     color: black;
+    font-size:larger;
 }
 
 
@@ -87,11 +92,13 @@ a{
     
     background-color: white;
     width: 100%;
-    height: 40%;
+    height: 35%;
+   
 
 }
 
 .form-main-div{
+    margin: 40px;
     display: flex;
     flex-direction: row;
     gap: 80px;
@@ -102,4 +109,39 @@ a{
     display: flex;
     flex-direction: column;
     
+}
+
+input{
+    height: 20px;
+    border-radius: 2px;
+}
+
+.buttonSection{
+    height:auto;
+    box-shadow: 5px grey;
+    
+}
+
+.btnInfo{
+    margin: 40px;
+    
+}
+
+.btnCreateAccount{
+    background-color: grey;
+    height: 50px;
+    width: 200px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    
+}
+
+.btnCreateAccount:hover{
+    background-color: brown;
+
+}
+
+a:hover{
+    color:black;
 }

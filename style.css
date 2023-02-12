@@ -126,6 +126,7 @@ a{
 .form-div{
     display: flex;
     flex-direction: column;
+    gap: 20px;
     
 }
 
@@ -134,11 +135,9 @@ input{
     border-radius: 2px;
 }
 
-input:invalid{
-    border: 1px solid red;
-}
 
-.buttonSection{
+
+.form-end{
     height:auto;
     box-shadow: 5px grey;
     
@@ -167,4 +166,8 @@ input:invalid{
 
 a:hover{
     color:black;
+}
+
+.errorMessage{
+    color: red;
 }

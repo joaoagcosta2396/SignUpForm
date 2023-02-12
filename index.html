@@ -10,7 +10,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
-        <script> src="app.js"</script>
+        
         
     </head>
     <body>
@@ -42,51 +42,85 @@
             </div>
             <div class = "form-inputs">
                 <h1 class="text" style="font-weight: 700; margin-top: 40px;">Let's do this!</h1>
-                <form action="" method="get" class="form-main-div">
+                <form id="form" action="" method="get" class="form-main-div">
                     <div class = "form-divs">
                         <div class = "form-div"> 
-                            <label for="firstName">First Name</label>
-                            <input type = "text" id ="email" name="email" >       
+                            <label for="firstName"></label>
+                            <input 
+                            type = "text" 
+                            id ="firstName"
+                            class="form-input"
+                            placeholder="First Name"  
+                            required>       
                         </div>
                         <div class = "form-div"> 
-                            <label for="email" >Email </label>
-                            <input type = "email" name="email" id="email" >       
+                            <label for="email" ></label>
+                            <input 
+                            type = "email" 
+                            class="form-input"  
+                            id="email"
+                            placeholder="Email" 
+                            required>       
                         </div>
                         <div class = "form-div"> 
-                            <label for="password" >Password</label>
-                            <input type = "password" class="password" id="password"  required> 
+                            <label for="password" ></label>
+                            <input 
+                            type = "password" 
+                            id="password"
+                            class="form-input"
+                            placeholder="Password"  
+                            required > 
                             <p id="error"></p>      
                         </div>
                     </div>
                     <div class = "form-divs">
                         <div class = "form-div"> 
-                            <label for="lastName">Last Name</label>
-                            <input type = "text" id ="lastName" name="lastName" >       
+                            <label for="lastName"></label>
+                            <input 
+                            type = "text" 
+                            id ="lastName" 
+                            name="lastName"
+                            class="form-input"
+                            placeholder="Last Name"  
+                            required>       
                         </div>
                         <div class = "form-div"> 
-                            <label for="phoneNumber" >Phone Number </label>
-                            <input type = "tel" name="phoneNumber" id="phoneNumber" >       
+                            <label for="phoneNumber" ></label>
+                            <input 
+                            type = "tel" 
+                            class="form-input" 
+                            id="phoneNumber"
+                            placeholder="Phone" 
+                            required>       
                         </div>
                         <div class = "form-div"> 
-                            <label for="password" >Confirm Password </label>
-                            <input type = "password" class="confirmPassword" id="confirmPassword" required>
-                            <p id="error"></p>        
+                            <label for="password" ></label>
+                            <input
+                             type = "password" 
+                             class="form-input" 
+                             id="confirmPassword"
+                             placeholder="Confirm Password" 
+                             required>    
                         </div>
                     </div>
-                  
+                    
                 </form>
+                
             </div>
-            <div class="buttonSection">
+            <div class="form-end">
 
                 <div class = "btnInfo">
+
+                    <p id= "errorMessage" class = "errorMessage"></p>
                 
-                    <button class="btnCreateAccount">Create Account</button>
+                    <button class="btnCreateAccount" type="submit">Create Account</button>
 
                     <p>Already have an account? <a href="https://www.google.com" style="color: brown;">Log in</a></p>
                 </div>
 
             </div>
         </div>
+        <script src="app.js"></script>
         
     </body>
 </html>

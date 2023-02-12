@@ -1,22 +1,25 @@
-const password = document.querySelector("#password").value;
-const confirmPassword = document.querySelector("#confirmPassword").value;
-
+const password = document.querySelector("#password");
+const confirmPassword = document.querySelector("#confirmPassword");
 const error = document.querySelector("#errorMessage");
 
 
-confirmPassword.addEventListener("input" , passwordCheck);
-password.addEventListener("input", passwordCheck);
+confirmPassword.addEventListener("input", passwordMatch);
+password.addEventListener("input", passwordMatch);
 
 
-
-function passwordCheck(){
-    if (password.value === "" || confirmPassword.value ===""){
+function passwordMatch(){
+    if(password.value === "" || confirmPassword === ""){
         error.textContent = "";
-    }else if (confirmPassword.value != password.value){
-            error.textContent = "passwords don't match";
-    }else if (confirmPassword.value === password.value) {
-        error.textContent = "OK"
-        error.style.color = "green";
-        
+    }else{
+        if(confirmPassword.value != password.value){
+            error.textContent = "Password doesn't match"
+            
+
+        }else{
+            if(confirmPassword.value === password.value){
+                error.textContent = "";
+
+            }
+        }
     }
 }
